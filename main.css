@@ -1,0 +1,80 @@
+html,body {
+  background-color: rgb(26, 10, 28);
+}
+.row {
+display: flex;
+}
+
+#header1{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+flex-flow:wrap;
+align-items: center;
+justify-content: space-evenly;
+
+}
+#btn_cont {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+flex-flow:wrap;
+align-items: center;
+justify-content:center;
+}
+#admin {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+flex-flow:wrap;
+align-items: center;
+
+}
+.image {
+background-color: crimson;
+width:100%;
+padding: 4px;
+margin:7px;
+box-shadow: rgba(39, 7, 39, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+h1{
+font-family: 'Honk', system-ui;
+font-size: 66px;
+width:95%;
+justify-content: center;
+align-items: center;
+margin-left:25px;
+}
+h2 {
+font-family: 'Honk', system-ui;
+font-size: 26px;
+width:95%;
+justify-content: center;
+align-items: center;
+margin-left:25px;
+}
+h3 {
+font-family: 'Oswald', sans-serif;
+font-size: 16px;
+width:95%;
+justify-content: center;
+align-items: center;
+margin-left:25px;
+color: antiquewhite;
+}
+.cont {
+width:32%;
+
+}
+#header {
+background-color: rgb(227, 53, 233);
+}
+.cont2 {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+flex-flow:wrap;
+align-items: center;
+justify-content: space-evenly;
+width:100%;
+}

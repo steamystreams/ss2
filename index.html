@@ -1,0 +1,125 @@
+ <html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+        <div class="commonninja_component pid-0f850c53-49bf-4d55-9be7-04cb15c71f15"></div>
+        <link href="https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./main.css" rel="stylesheet">
+        <script>
+
+  const data = null;
+
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = false;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    var data = JSON.parse(this.responseText);
+       
+
+    console.log(this.responseText);
+    for (let i = 0; i < 300; i++) {
+      let cont = document.createElement('div');
+      cont.setAttribute("class",'cont')
+      let cont2 = document.createElement('div');
+      cont2.setAttribute('class', "caption");
+      let pre = document.createElement('pre');
+      pre.setAttribute('class', 'pre');
+      pre.innerHTML = data.videos[i].url;
+      let ep_link = document.createElement('a');
+      ep_link.setAttribute('href', data.videos[i].embed);
+      let img = document.createElement('img');
+     let dl = document.createElement('a');
+     dl.setAttribute('href', data.videos[i].url);
+     dl.setAttribute('class', "dl");
+     dl.innerText = 'Link';
+      img.setAttribute('class', 'image');
+      img.setAttribute('src', data.videos[i].default_thumb.src);
+      let title = document.createElement('h2');
+      let title2 = data.videos[i].title+'  ';
+      let title3 = document.createElement('h3');
+      let date = 'Added:'+'  '+data.videos[i].added+'  Duration:  ';
+    let duration = data.videos[i].length_min
+      
+      var header1 = document.getElementById('header1');
+                    header1.append(cont);
+                    cont.appendChild(ep_link);
+                    ep_link.append(img);
+                    cont.append(title);
+                    title.append(title2);
+                    title.append(title3)
+                   title3.append(date);
+                   title3.append(duration);
+                  
+                  
+                  
+                    
+
+           
+            ep_link.append(img);
+            cont.append(title)
+        
+            
+    }
+  
+  }
+})
+
+
+xhr.open("GET", "https://www.eporner.com/api/v2/video/search/?query=upscaled&per_page=300&page=1&thumbsize=big&order=top-weekly&gay=0&lq=1&format=json");
+
+xhr.send(data);
+
+
+
+  
+  
+  
+
+
+      
+        </script>
+  <body>
+    <div id="header">
+      <h1>The Retro Shack - Classic Porn as it should be</h1>
+    </div>
+    <div id="btn_cont">
+      <button id="hairy" class="nav" onclick="myfunction_hairy()">Hairy</button>
+      <button id="couples" class="nav" onclick="myfunction_couples()">Couples</button>
+
+      <button id="bigboobs" class="nav" onclick="myfunction_bigboobs()">Big Boobs</button>
+      <button id="smoke" class="nav" onclick="myfunction_smoke()">Smoke</button>
+      <button id="nipples" class="nav" onclick="myfunction_nipples()">Big Nipples</button>
+      <button id="toe" class="nav" onclick="myfunction_toe()">Cameltoe</button>
+      <button id="search_btn" onclick="myFunction4()">Search</button>
+         
+      <input id="search" type="text"></input>
+      <label for="years"><h3>Choose a year: </h3></label>
+
+      <select name="years" id="years">
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+      </select>
+   
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="header" id="header1"></div>
+
+</div>
+<script src="./main2.js"></script>
+  </body>
+ </html>
